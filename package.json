@@ -31,10 +31,10 @@
   "bugs": {
     "url": "https://github.com/colinskow/superlogin/issues"
   },
-  "homepage": "https://github.com/colinskow/superlogin",
+  "homepage": "github:technosophy/superlogin",
   "dependencies": {
     "bluebird": "^3.3.4",
-    "couch-pwd": "github:zeMirco/couch-pwd",
+    "couch-pwd": "github:technosophy/couch-pwd",
     "ejs": "^2.3.1",
     "express": "^4.13.3",
     "extend": "^3.0.0",
