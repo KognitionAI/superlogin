@@ -3,6 +3,7 @@
 var path = require('path');
 
 module.exports = {
+  externalUrl: 'http://127.0.0.1:3000',
   // Useful settings for testing and debugging your app
   testMode: {
     // Use a stub transport so no email is actually sent
