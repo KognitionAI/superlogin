@@ -39,7 +39,7 @@
     "express": "^4.18.1",
     "extend": "^3.0.0",
     "fs-extra": "^0.30.0",
-    "nodemailer": "^2.3.0",
+    "nodemailer": "^6.7.8",
     "nodemailer-stub-transport": "^1.0.0",
     "passport": "^0.5.3",
     "passport-http-bearer-sl": "^1.0.4",
