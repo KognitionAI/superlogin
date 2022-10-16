@@ -34,6 +34,7 @@
   "homepage": "github:technosophy/superlogin",
   "dependencies": {
     "bluebird": "^3.7.2",
+    "jwt-decode": "^3.1.2",
     "couch-pwd": "github:technosophy/couch-pwd",
     "ejs": "^2.3.1",
     "express": "^4.18.1",
@@ -44,6 +45,7 @@
     "passport": "^0.5.3",
     "passport-http-bearer-sl": "^1.0.4",
     "passport-local": "^1.0.0",
+    "passport-azure-ad-oauth2": "^0.0.4",
     "pouchdb": "~7.3.0",
     "pouchdb-seed-design": "^0.2.0",
     "redis": "^2.5.2",
