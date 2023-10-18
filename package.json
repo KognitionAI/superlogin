@@ -35,7 +35,7 @@
   "dependencies": {
     "bluebird": "^3.7.2",
     "couch-pwd": "github:technosophy/couch-pwd",
-    "ejs": "^3.1.8",
+    "ejs": "^3.1.9",
     "express": "^4.18.2",
     "extend": "^3.0.2",
     "fs-extra": "^11.1.0",
@@ -65,5 +65,10 @@
     "rimraf": "^4.0.7",
     "sinon": "^15.0.1",
     "sinon-chai": "^3.7.0"
+  },
+  "overrides": {
+    "pouchdb-seed-design": {
+      "node-extend": "npm:node.extend@2.0.2"
+    }
   }
 }
