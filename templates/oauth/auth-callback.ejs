@@ -7,16 +7,19 @@
 </head>
 <body>
 <script type="text/javascript">
-    if (window.opener) {
-        window.opener.focus();
-        var session = <%- JSON.stringify(session) %>;
-        var error = <%- JSON.stringify(error) %>;
-        var link = <%- JSON.stringify(link) %>;
-        if (window.opener.superlogin && window.opener.superlogin.oauthSession) {
-            window.opener.superlogin.oauthSession(error, session, link);
-        }
+    var session = <%- JSON.stringify(session) %>;
+    var error = <%- JSON.stringify(error) %>;
+    var link = <%- JSON.stringify(link) %>;
+    
+    // Redirect back to the main application with the auth data
+    const redirectUrl = new URL(link || window.location.origin);
+    if (error) {
+        redirectUrl.searchParams.set('auth_error', JSON.stringify(error));
+    } else if (session) {
+        redirectUrl.searchParams.set('auth_session', JSON.stringify(session));
     }
-    window.close();
+    
+    window.location.href = redirectUrl.toString();
 </script>
 </body>
-</html>
+</html></html>
