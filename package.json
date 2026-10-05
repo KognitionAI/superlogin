@@ -46,13 +46,13 @@
     "passport-azure-ad-oauth2": "^0.0.4",
     "passport-http-bearer-sl": "^1.0.4",
     "passport-local": "^1.0.0",
-    "pouchdb": "8.0.1",
+    "pouchdb": "^9.0.0",
     "pouchdb-seed-design": "github:KognitionAI/pouchdb-seed-design",
     "redis": "^4.6.10",
-    "sofa-model": "github:KognitionAI/sofa-model#46d1bf0",
+    "sofa-model": "github:KognitionAI/sofa-model#4e8955e40e5c0a58c06b7f08cf8f6691e3cd0e39",
     "superagent": "8.1.2",
     "urlsafe-base64": "1.0.0",
-    "uuid": "9.0.1"
+    "uuid": "^11.1.1"
   },
   "devDependencies": {
     "body-parser": "^1.20.2",
@@ -69,6 +69,7 @@
   "overrides": {
     "pouchdb-seed-design": {
       "node-extend": "npm:node.extend@2.0.2"
-    }
+    },
+    "uuid": "^11.1.1"
   }
 }
